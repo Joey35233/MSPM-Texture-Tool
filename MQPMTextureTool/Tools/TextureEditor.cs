@@ -200,7 +200,7 @@ namespace MQPMTextureTool
             string outfitPath = "";
 
             //get the outfit path.
-            switch (character)
+            /*switch (character)
             {
                 case "snake":
                     outfitPath = @"\Assets\tpp\chara\sna\Scenes\sna0_arm0_cov.fmdl";
@@ -211,7 +211,12 @@ namespace MQPMTextureTool
                 default:
                     outfitPath = @"\Assets\tpp\chara\dds\Scenes\dds5_head_z_cov.fmdl";
                     break;
-            } //switch ends
+            } //switch ends */
+
+            //find which outfit we need to edit.
+            for (int i = 0; i < outfits.Count; i++)
+                if (outfits[i].name == playerOutfitName)
+                    outfitPath = outfits[i].outfitPath;
 
             playerOutfitName = GetPlayerOutfitName(character, outfitName); //get the player outfit name.
 
