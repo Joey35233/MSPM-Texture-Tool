@@ -199,6 +199,9 @@ namespace MQPMTextureTool
             string fpkOutputPath = "";
             string outfitPath = "";
 
+            outfits.Clear();
+            GetOutfits();
+
             //get the outfit path.
             /*switch (character)
             {
@@ -213,12 +216,12 @@ namespace MQPMTextureTool
                     break;
             } //switch ends */
 
+            playerOutfitName = GetPlayerOutfitName(character, outfitName); //get the player outfit name.
+
             //find which outfit we need to edit.
             for (int i = 0; i < outfits.Count; i++)
                 if (outfits[i].name == playerOutfitName)
                     outfitPath = outfits[i].outfitPath;
-
-            playerOutfitName = GetPlayerOutfitName(character, outfitName); //get the player outfit name.
 
             outputPath += @"\Assets\tpp\pack\player\parts\" + playerOutfitName;
             fpkOutputPath = outputPath + "_fpk";
