@@ -1,4 +1,4 @@
-﻿namespace MQPMTextureTool
+﻿namespace MSPMTextureTool
 {
     partial class FatiguesForm
     {

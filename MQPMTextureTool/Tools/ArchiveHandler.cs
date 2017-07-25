@@ -4,7 +4,7 @@ using GzsTool.Core.Pftxs;
 using System.Collections.Generic;
 using System.IO;
 
-namespace MQPMTextureTool
+namespace MSPMTextureTool
 {
     public static class ArchiveHandler
     {
@@ -82,4 +82,4 @@ namespace MQPMTextureTool
             } //using ends
         } //method WritePftxsArchive
     } //class ArchiveHandler ends
-} //namespace MQPMTool2 ends
+} //namespace MSPMTool2 ends

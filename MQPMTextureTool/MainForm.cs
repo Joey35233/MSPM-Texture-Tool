@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Drawing;
 
-namespace MQPMTextureTool
+namespace MSPMTextureTool
 {
     public partial class MainForm : Form
     {
@@ -323,4 +323,4 @@ namespace MQPMTextureTool
 
         }
     } //partial Class MainForm ends
-} //namespace MQPMTextureTool ends
+} //namespace MSPMTextureTool ends

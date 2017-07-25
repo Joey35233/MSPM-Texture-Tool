@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace MQPMTextureTool
+namespace MSPMTextureTool
 {
     public partial class FatiguesForm : Form
     {
@@ -394,4 +394,4 @@ namespace MQPMTextureTool
             camos.Add(khakiUrban2t); */
         } //method InitializeCamos ends
     } //class FatiguesForm ends
-} //namespace MQPMTextureTool ends
+} //namespace MSPMTextureTool ends

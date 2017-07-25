@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 
-namespace MQPMTextureTool
+namespace MSPMTextureTool
 {
     public static class HexSwapper
     {
@@ -48,4 +48,4 @@ namespace MQPMTextureTool
                              .ToArray();
         } //StringToByteArray ends
     } //class HexSwapper ends
-} //namespace MQPMTool2 ends
+} //namespace MSPMTool2 ends

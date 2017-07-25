@@ -5,7 +5,7 @@ using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
-namespace MQPMTextureTool
+namespace MSPMTextureTool
 {
     public static class TextureEditor
     {
@@ -574,4 +574,4 @@ namespace MQPMTextureTool
             } //catch ends
         } //method DeleteDirectory ends
     } //class Texture Editor ends
-} //namespace MQPMTextureTool ends
+} //namespace MSPMTextureTool ends

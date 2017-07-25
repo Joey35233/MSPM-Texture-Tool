@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQPMTextureTool", "MQPMTextureTool\MQPMTextureTool.csproj", "{EF26DE65-D9AC-48B5-BDA1-3CEA2E26B370}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSPMTextureTool", "MQPMTextureTool\MSPMTextureTool.csproj", "{EF26DE65-D9AC-48B5-BDA1-3CEA2E26B370}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
