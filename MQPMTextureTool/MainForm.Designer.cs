@@ -46,7 +46,7 @@
             this.openFileLabel.Location = new System.Drawing.Point(13, 13);
             this.openFileLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.openFileLabel.Name = "openFileLabel";
-            this.openFileLabel.Size = new System.Drawing.Size(250, 17);
+            this.openFileLabel.Size = new System.Drawing.Size(248, 17);
             this.openFileLabel.TabIndex = 0;
             this.openFileLabel.Text = "Select the MSPM Tool\'s Output Folder";
             // 
