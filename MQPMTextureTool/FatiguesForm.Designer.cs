@@ -37,9 +37,10 @@
             // camoLabel
             // 
             this.camoLabel.AutoSize = true;
-            this.camoLabel.Location = new System.Drawing.Point(9, 9);
+            this.camoLabel.Location = new System.Drawing.Point(18, 17);
+            this.camoLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.camoLabel.Name = "camoLabel";
-            this.camoLabel.Size = new System.Drawing.Size(76, 13);
+            this.camoLabel.Size = new System.Drawing.Size(152, 25);
             this.camoLabel.TabIndex = 0;
             this.camoLabel.Text = "Select a Camo";
             // 
@@ -47,17 +48,19 @@
             // 
             this.camoComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.camoComboBox.FormattingEnabled = true;
-            this.camoComboBox.Location = new System.Drawing.Point(12, 25);
+            this.camoComboBox.Location = new System.Drawing.Point(24, 48);
+            this.camoComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.camoComboBox.Name = "camoComboBox";
-            this.camoComboBox.Size = new System.Drawing.Size(192, 21);
+            this.camoComboBox.Size = new System.Drawing.Size(380, 33);
             this.camoComboBox.TabIndex = 1;
             this.camoComboBox.SelectedIndexChanged += new System.EventHandler(this.camoComboBox_SelectedIndexChanged);
             // 
             // applyButton
             // 
-            this.applyButton.Location = new System.Drawing.Point(13, 53);
+            this.applyButton.Location = new System.Drawing.Point(26, 102);
+            this.applyButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.applyButton.Name = "applyButton";
-            this.applyButton.Size = new System.Drawing.Size(75, 23);
+            this.applyButton.Size = new System.Drawing.Size(150, 44);
             this.applyButton.TabIndex = 2;
             this.applyButton.Text = "Apply";
             this.applyButton.UseVisualStyleBackColor = true;
@@ -65,14 +68,15 @@
             // 
             // FatiguesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(216, 90);
+            this.ClientSize = new System.Drawing.Size(432, 173);
             this.Controls.Add(this.applyButton);
             this.Controls.Add(this.camoComboBox);
             this.Controls.Add(this.camoLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "FatiguesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

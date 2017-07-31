@@ -229,6 +229,11 @@ namespace MSPMTextureTool
             AddTextures(outputPath, @"\camo\" + camoName, "3014d9368df48");
             HexSwapper.Swap(fpkOutputPath + outfitPath, "BB2CCABD1AFE6A", "48DF68934D016B");
 
+            //Adds static textures (nrm, srm and trm) NOTE THIS WON'T WORK YET I NEED TO ADD CUSTOM HASHES!
+            AddTextures(outputPath, @"\static\" + "pantsnrm", "wmu1_body0_def_nrm");
+            AddTextures(outputPath, @"\static\" + "pantstrm", "wmu1_body0_def_trm");
+            AddTextures(outputPath, @"\static\" + "pantssrm", "wmu1_body0_def_srm");
+
             /*
              * 0x2fe1abdca2cbb (wmu1_body0_def_bsm) + 0x68000000000000 = 6AFE1ABDCA2CBB
              * 
