@@ -226,13 +226,22 @@ namespace MSPMTextureTool
             outputPath += @"\Assets\tpp\pack\player\parts\" + playerOutfitName;
             fpkOutputPath = outputPath + "_fpk";
 
-            AddTextures(outputPath, @"\camo\" + camoName, "3014d9368df48");
-            HexSwapper.Swap(fpkOutputPath + outfitPath, "BB2CCABD1AFE6A", "48DF68934D016B");
+            //Adds static textures (nrm, srm and trm) if the outfit is pants. They are static because they do not change with the skin color.
+            if (camoName == "parasitePants" || camoName == "skin1Pants" || camoName == "skin2Pants" || camoName == "skin3Pants" || camoName == "skin4Pants" || camoName == "skin5Pants")
+            {
+                AddTextures(outputPath, @"\static\" + "pantsnrm", "385c886b8b730");
+                AddTextures(outputPath, @"\static\" + "pantstrm", "130db06466b6a");
+                AddTextures(outputPath, @"\static\" + "pantssrm", "1d6b6311b7fce");
+            }
 
-            //Adds static textures (nrm, srm and trm) NOTE THIS WON'T WORK YET I NEED TO ADD CUSTOM HASHES!
-            AddTextures(outputPath, @"\static\" + "pantsnrm", "wmu1_body0_def_nrm");
-            AddTextures(outputPath, @"\static\" + "pantstrm", "wmu1_body0_def_trm");
-            AddTextures(outputPath, @"\static\" + "pantssrm", "wmu1_body0_def_srm");
+            AddTextures(outputPath, @"\camo\" + camoName, "3014d9368df48"); //Looks in the assets\camo folder for the texture and renames it to 3014d9368df48.
+            HexSwapper.Swap(fpkOutputPath + outfitPath, "BB2CCABD1AFE6A", "48DF68934D016B"); //Hex-edits the model, replacing BB2CCABD1AFE6A (the hex for the old texture) with 48DF68934D016B (the hex of the new). This isn't done anywhere else, admittedly for no really good reason.
+
+            //Adds chest albedo texture if the outfit doesn't have parasite skin.
+            if (camoName != "parasitePants")
+            {
+                AddTextures(outputPath, @"\camo\chests\" + camoName + "Chest", "1f03f04a586f");
+            }
 
             /*
              * 0x2fe1abdca2cbb (wmu1_body0_def_bsm) + 0x68000000000000 = 6AFE1ABDCA2CBB
