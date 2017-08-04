@@ -229,9 +229,9 @@ namespace MSPMTextureTool
             //Adds static textures (nrm, srm and trm) if the outfit is pants. They are static because they do not change with the skin color.
             if (camoName == "parasitePants" || camoName == "skin1Pants" || camoName == "skin2Pants" || camoName == "skin3Pants" || camoName == "skin4Pants" || camoName == "skin5Pants")
             {
-                AddTextures(outputPath, @"\static\" + "pantsnrm", "385c886b8b730");
-                AddTextures(outputPath, @"\static\" + "pantstrm", "130db06466b6a");
-                AddTextures(outputPath, @"\static\" + "pantssrm", "1d6b6311b7fce");
+                AddTextures(outputPath, @"\static\" + "pantsnrm", "2976b4ff68ba0");
+                AddTextures(outputPath, @"\static\" + "pantstrm", "1bbf0ba1417d5");
+                AddTextures(outputPath, @"\static\" + "pantssrm", "c633b5049201");
             }
 
             AddTextures(outputPath, @"\camo\" + camoName, "3014d9368df48"); //Looks in the assets\camo folder for the texture and renames it to 3014d9368df48.
